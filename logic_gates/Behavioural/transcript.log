@@ -1,0 +1,51 @@
+# 
+# vlog -sv +acc logic_gates_b.sv
+# QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+# Start time: 17:05:13 on Jan 25,2026
+# vlog -reportprogress 300 -sv "+acc" logic_gates_b.sv 
+# -- Compiling module gates_b
+# 
+# Top level modules:
+# 	gates_b
+# End time: 17:05:13 on Jan 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv +acc logic_gates_b_tb.sv
+# QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+# Start time: 17:05:13 on Jan 25,2026
+# vlog -reportprogress 300 -sv "+acc" logic_gates_b_tb.sv 
+# -- Compiling module gates_b
+# -- Compiling module tb
+# 
+# Top level modules:
+# 	tb
+# End time: 17:05:13 on Jan 25,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc -wlf sim.wlf work.tb
+# vsim -voptargs="+acc" -wlf sim.wlf work.tb 
+# Start time: 17:05:13 on Jan 25,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.tb(fast)
+# Loading work.gates_b(fast)
+# 
+# log -r /*
+# 
+# add wave -r sim:/tb/dut/*
+# 
+# vcd file dump.vcd
+# vcd add -r sim:/tb/dut/*
+# vcd on
+# 
+# run -all
+# [0]ns  a = x, b = x, not_g = x, and_g = x, nand_g = x, or_g = x, nor_g = x, xor = x, xnor = x
+# [6]ns  a = 0, b = 0, not_g = 1, and_g = 0, nand_g = 1, or_g = 0, nor_g = 1, xor = 0, xnor = 1
+# [7]ns  a = 1, b = 0, not_g = 0, and_g = 0, nand_g = 1, or_g = 1, nor_g = 0, xor = 1, xnor = 0
+# [8]ns  a = 0, b = 1, not_g = 1, and_g = 0, nand_g = 1, or_g = 1, nor_g = 0, xor = 1, xnor = 0
+# [9]ns  a = 1, b = 1, not_g = 0, and_g = 1, nand_g = 0, or_g = 1, nor_g = 0, xor = 0, xnor = 1
+# ** Note: $finish    : logic_gates_b_tb.sv(26)
+#    Time: 10 ns  Iteration: 0  Instance: /tb
+# 1
+# Break in Module tb at logic_gates_b_tb.sv line 26
+# 
+# transcript off

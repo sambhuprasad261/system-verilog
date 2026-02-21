@@ -1,0 +1,65 @@
+$date
+	Sun Jan 25 17:05:17 2026
+$end
+$version
+	QuestaSim Version 2021.3_1
+$end
+$timescale
+	1ns
+$end
+
+$scope module tb $end
+
+$scope module dut $end
+$var wire 1 ! a $end
+$var wire 1 " b $end
+$var reg 1 # and_g $end
+$var reg 1 $ or_g $end
+$var reg 1 % xor_g $end
+$var reg 1 & nand_g $end
+$var reg 1 ' nor_g $end
+$var reg 1 ( xnor_g $end
+$var reg 1 ) not_g $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x#
+x$
+x%
+x&
+x'
+x(
+x)
+x"
+x!
+$end
+#6
+0!
+0"
+0#
+0$
+1'
+1&
+0%
+1(
+1)
+#7
+1!
+1$
+0'
+1%
+0(
+0)
+#8
+0!
+1"
+1)
+#9
+1!
+1#
+0&
+0%
+1(
+0)

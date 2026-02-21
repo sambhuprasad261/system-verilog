@@ -1,0 +1,64 @@
+# 
+# vlog -sv adder_intf.sv
+# QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+# Start time: 00:10:57 on Feb 21,2026
+# vlog -reportprogress 300 -sv adder_intf.sv 
+# -- Compiling interface adder_intf
+# 
+# Top level modules:
+# 	--none--
+# End time: 00:10:57 on Feb 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv adder_des.sv
+# QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+# Start time: 00:10:57 on Feb 21,2026
+# vlog -reportprogress 300 -sv adder_des.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 00:10:57 on Feb 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv adder_tb.sv
+# QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+# Start time: 00:10:57 on Feb 21,2026
+# vlog -reportprogress 300 -sv adder_tb.sv 
+# -- Compiling module adder_tb
+# 
+# Top level modules:
+# 	adder_tb
+# End time: 00:10:57 on Feb 21,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc -wlf sim.wlf work.adder_tb
+# vsim -voptargs="+acc" -wlf sim.wlf work.adder_tb 
+# Start time: 00:10:57 on Feb 21,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.adder_tb(fast)
+# Loading work.adder_intf(fast__1)
+# Loading work.adder(fast)
+# 
+# log -r /*
+# 
+# add wave -r sim:/adder_tb/dut/*
+# 
+# vcd file dump.vcd
+# vcd add -r sim:/adder_tb/dut/*
+# vcd on
+# 
+# run -all
+# ** Note: $finish    : adder_tb.sv(54)
+#    Time: 35 ns  Iteration: 1  Instance: /adder_tb
+# 1
+# Break in Module adder_tb at adder_tb.sv line 54
+# 
+# transcript off
+# 
+#  ========= Scoreboard =========
+# Total transcations : 0
+# Pass Count = 0
+# Fail Count = 0
+# STATUS : Test Passed
+# End time: 00:12:08 on Feb 21,2026, Elapsed time: 0:01:11
+# Errors: 0, Warnings: 0

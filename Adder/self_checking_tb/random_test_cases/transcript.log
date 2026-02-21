@@ -1,0 +1,71 @@
+# 
+# vlog -sv adder_des.sv
+# QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+# Start time: 04:16:54 on Feb 20,2026
+# vlog -reportprogress 300 -sv adder_des.sv 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 04:16:55 on Feb 20,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv adder_tb.sv
+# QuestaSim-64 vlog 2021.3_1 Compiler 2021.08 Aug 15 2021
+# Start time: 04:16:55 on Feb 20,2026
+# vlog -reportprogress 300 -sv adder_tb.sv 
+# -- Compiling module adder_tb
+# 
+# Top level modules:
+# 	adder_tb
+# End time: 04:16:55 on Feb 20,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -voptargs=+acc -wlf sim.wlf work.adder_tb
+# vsim -voptargs="+acc" -wlf sim.wlf work.adder_tb 
+# Start time: 04:16:55 on Feb 20,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading sv_std.std
+# Loading work.adder_tb(fast)
+# Loading work.adder(fast)
+# 
+# log -r /*
+# 
+# add wave -r sim:/adder_tb/dut/*
+# 
+# vcd file dump.vcd
+# vcd add -r sim:/adder_tb/dut/*
+# vcd on 
+# 
+# run -all
+# [25] trans [1] a = 231, b = 124, valid = 0, sum = 0
+#  
+# [35] trans [2] a = 156, b = 28, valid = 1, sum = 0
+#  
+# Pass: a = 156, b = 28, result = 184
+# [45] trans [3] a = 232, b = 167, valid = 1, sum = 184
+#  
+# [55] trans [4] a = 22, b = 196, valid = 1, sum = 399
+#  
+# ** Error: Fail: a = 232, b = 167 expected = 399, got = 218
+#    Time: 65 ns  Scope: adder_tb File: adder_tb.sv Line: 97
+# [65] trans [5] a = 0, b = 89, valid = 1, sum = 218
+#  
+# ** Error: Fail: a = 22, b = 196 expected = 218, got = 89
+#    Time: 85 ns  Scope: adder_tb File: adder_tb.sv Line: 97
+# Pass: a = 0, b = 89, result = 89
+# =========================
+# Transcations Completed!
+# Pass = 2
+# Fail = 2
+# =========================
+# Pass: a = 0, b = 89, result = 89
+# Pass: a = 0, b = 89, result = 89
+# Pass: a = 0, b = 89, result = 89
+# Pass: a = 0, b = 89, result = 89
+# Pass: a = 0, b = 89, result = 89
+# ** Note: $finish    : adder_tb.sv(66)
+#    Time: 215 ns  Iteration: 0  Instance: /adder_tb
+# 1
+# Break in Module adder_tb at adder_tb.sv line 66
+# 
+# transcript off
